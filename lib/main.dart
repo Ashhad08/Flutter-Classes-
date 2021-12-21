@@ -36,14 +36,6 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: const Center(
-          child: Text(
-            'Hello there!',
-            style: TextStyle(
-              fontSize: 30,
-            ),
-          ),
-        ),
       ),
     );
   }
