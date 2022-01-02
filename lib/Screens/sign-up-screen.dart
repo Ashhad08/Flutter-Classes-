@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class SignUp extends StatelessWidget {
-
-TextEditingController _nameController = TextEditingController();
-TextEditingController _emailController = TextEditingController();
-TextEditingController _pswrdController = TextEditingController();
-final _formKey = GlobalKey<FormState>();
+  TextEditingController _nameController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _pswrdController = TextEditingController();
+  TextEditingController _confirmController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +19,15 @@ final _formKey = GlobalKey<FormState>();
         key: _formKey,
         child: Column(
           children: [
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             TextFormField(
               controller: _nameController,
-              validator: (val){
-                if(val!.isEmpty){
+              validator: (val) {
+                if (val!.isEmpty) {
                   return 'kindly Enter Your Name';
-                } else{
+                } else {
                   return null;
                 }
               },
@@ -71,17 +73,27 @@ final _formKey = GlobalKey<FormState>();
             SizedBox(
               height: 20,
             ),
-            RaisedButton(
-              onPressed: () {
-                if(_formKey.currentState!.validate()){
-                  print('Confirm Successfully');
+            TextFormField(
+              controller: _confirmController,
+              validator: (val) {
+                if (val!.isEmpty) {
+                  return "Kindly Confirm Your pasword";
+                } else if (!(_confirmController == _pswrdController)) {
+                  return 'Password Dose not matched!';
+                } else {
+                  return null;
                 }
               },
-              child: Text('Confirm'),
+              decoration: InputDecoration(
+                hintText: 'Confirm Password',
+              ),
+            ),
+            SizedBox(
+              height: 30,
             ),
             RaisedButton(
               onPressed: () {
-                if(_formKey.currentState!.validate()){
+                if (_formKey.currentState!.validate()) {
                   print('SignUp Successfully');
                 }
               },
