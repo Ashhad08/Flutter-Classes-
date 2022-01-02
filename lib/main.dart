@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'Screens/button_screen.dart';
 import 'Screens/column_screen.dart';
 import 'Screens/login_screen.dart';
+import 'Screens/login_screen_UI.dart';
 import 'Screens/row_screen.dart';
 import 'Screens/sign-up-screen.dart';
 import 'Screens/text_form_field_view.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       //home: ButtonScreen(),
       // home: TextFormFieldView(),
     // home: Login(),
-      home: SignUp(),
+     // home: SignUp(),
+      home: LoginScreenUI(),
     );
   }
 }
