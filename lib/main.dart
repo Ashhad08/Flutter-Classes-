@@ -4,8 +4,10 @@ import 'Screens/button_screen.dart';
 import 'Screens/column_screen.dart';
 import 'Screens/login_screen.dart';
 import 'Screens/login_screen_UI.dart';
+import 'Screens/reset_password_screen_UI.dart';
 import 'Screens/row_screen.dart';
 import 'Screens/sign-up-screen.dart';
+import 'Screens/signup_screen_UI.dart';
 import 'Screens/text_form_field_view.dart';
 
 void main() {
@@ -22,7 +24,9 @@ class MyApp extends StatelessWidget {
       // home: TextFormFieldView(),
     //home: Login(),
      // home: SignUp(),
-      home: LoginScreenUI(),
+     // home: LoginScreenUI(),
+     //home: SignUpScreenUI(),
+      home: ResetPasswordScreenUI(),
     );
   }
 }

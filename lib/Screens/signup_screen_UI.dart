@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreenUI extends StatelessWidget {
-  const LoginScreenUI({Key? key}) : super(key: key);
+class SignUpScreenUI extends StatelessWidget {
+  const SignUpScreenUI({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class LoginScreenUI extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 12.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -26,16 +26,15 @@ class LoginScreenUI extends StatelessWidget {
                 height: 50,
               ),
               Center(
-                child: Text(
-                  'Welcome Back',
-                  style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
-                ),
-              ),
+                  child: Text(
+                'Create Account',
+                style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+              )),
               SizedBox(
                 height: 50,
               ),
               Text(
-                'Login',
+                'Sign Up',
                 style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
@@ -55,9 +54,27 @@ class LoginScreenUI extends StatelessWidget {
                     width: 5,
                   ),
                   Text(
-                    'Your Email/User Name',
+                    'Your Full Name',
                     style: TextStyle(color: Colors.grey),
                   ),
+                ],
+              ),
+
+              TextFormField(),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Icons.email,
+                    size: 18,
+                    color: Colors.grey,
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text('Your Email', style: TextStyle(color: Colors.grey),),
                 ],
               ),
               TextFormField(),
@@ -68,42 +85,28 @@ class LoginScreenUI extends StatelessWidget {
                 children: [
                   Icon(
                     Icons.lock,
-                    size: 15,
+                    size: 18,
                     color: Colors.grey,
                   ),
                   SizedBox(
                     width: 5,
                   ),
-                  Text(
-                    'Password',
-                    style: TextStyle(color: Colors.grey),
-                  ),
+                  Text('Password',style: TextStyle(color: Colors.grey),),
                 ],
               ),
               TextFormField(),
               SizedBox(
-                height: 50,
-              ),
-              Center(
-                  child: Text(
-                'Forgot Password?',
-                style: TextStyle(
-                    color: Color(0xff2F78E1),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12),
-              )),
-              SizedBox(
-                height: 35,
+                height: 40,
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
                 child: RaisedButton(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(10)
                   ),
                   color: Color(0xff2F78E1),
                   onPressed: () {},
-                  child: Text('Login',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                  child: Text('Sign Up',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                 ),
               ),
               SizedBox(
@@ -112,8 +115,8 @@ class LoginScreenUI extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Are you A new User?',style: TextStyle(fontWeight: FontWeight.bold),),
-                  Text(' Sign Up',style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff2F78E1)),),
+                  Text('Already a User?',style: TextStyle(fontWeight: FontWeight.bold),),
+                  Text(' Login',style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff2F78E1)),),
                 ],
               ),
               SizedBox(height: 50,),
