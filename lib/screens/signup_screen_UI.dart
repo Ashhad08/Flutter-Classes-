@@ -59,7 +59,6 @@ class SignUpScreenUI extends StatelessWidget {
                   ),
                 ],
               ),
-
               TextFormField(),
               SizedBox(
                 height: 20,
@@ -74,7 +73,10 @@ class SignUpScreenUI extends StatelessWidget {
                   SizedBox(
                     width: 5,
                   ),
-                  Text('Your Email', style: TextStyle(color: Colors.grey),),
+                  Text(
+                    'Your Email',
+                    style: TextStyle(color: Colors.grey),
+                  ),
                 ],
               ),
               TextFormField(),
@@ -91,7 +93,10 @@ class SignUpScreenUI extends StatelessWidget {
                   SizedBox(
                     width: 5,
                   ),
-                  Text('Password',style: TextStyle(color: Colors.grey),),
+                  Text(
+                    'Password',
+                    style: TextStyle(color: Colors.grey),
+                  ),
                 ],
               ),
               TextFormField(),
@@ -102,11 +107,14 @@ class SignUpScreenUI extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 child: RaisedButton(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)
-                  ),
+                      borderRadius: BorderRadius.circular(10)),
                   color: Color(0xff2F78E1),
                   onPressed: () {},
-                  child: Text('Sign Up',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                  child: Text(
+                    'Sign Up',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
               SizedBox(
@@ -115,19 +123,41 @@ class SignUpScreenUI extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Already a User?',style: TextStyle(fontWeight: FontWeight.bold),),
-                  Text(' Login',style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff2F78E1)),),
+                  Text(
+                    'Already a User?',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    ' Login',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: Color(0xff2F78E1)),
+                  ),
                 ],
               ),
-              SizedBox(height: 50,),
+              SizedBox(
+                height: 50,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.apps,color: Color(0xff2F78E1),),
-                  SizedBox(width: 20,),
-                  Icon(Icons.apps,color: Color(0xff2F78E1),),
-                  SizedBox(width: 20,),
-                  Icon(Icons.apps,color: Color(0xff2F78E1),),
+                  Icon(
+                    Icons.apps,
+                    color: Color(0xff2F78E1),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Icon(
+                    Icons.apps,
+                    color: Color(0xff2F78E1),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Icon(
+                    Icons.apps,
+                    color: Color(0xff2F78E1),
+                  ),
                 ],
               ),
             ],
