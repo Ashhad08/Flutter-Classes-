@@ -40,8 +40,8 @@ class MyApp extends StatelessWidget {
       //home: LoginImageUI(),
      // home: SignupImageUI(),
      // home: MiniCalculator(),
-    //home: DoctorInfo(),
-      home: FindConsultation(),
+    home: DoctorInfo(),
+    //  home: FindConsultation(),
     );
   }
 }

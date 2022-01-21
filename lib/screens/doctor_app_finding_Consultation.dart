@@ -215,7 +215,7 @@ class FindConsultation extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(20),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                         decoration: BoxDecoration(
@@ -256,17 +256,17 @@ class FindConsultation extends StatelessWidget {
                         width: 20,
                       ),
                       Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: Colors.orange,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Colors.orange,
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                left: 10, right: 10, top: 8, bottom: 8),
+                            child: Text('Call',
+                                style: TextStyle(color: Colors.white)),
+                          ),
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.only(
-                              left: 10, right: 10, top: 8, bottom: 8),
-                          child: Text('Call',
-                              style: TextStyle(color: Colors.white)),
-                        ),
-                      )
                     ],
                   ),
                 ),
