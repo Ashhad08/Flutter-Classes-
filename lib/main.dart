@@ -1,3 +1,6 @@
+import 'package:first_app/screens/list_view_builder.dart';
+import 'package:first_app/screens/model_classes.dart';
+
 import 'screens/doctor_app_finding_Consultation.dart';
 import 'package:flutter/material.dart';
 
@@ -40,8 +43,10 @@ class MyApp extends StatelessWidget {
       //home: LoginImageUI(),
      // home: SignupImageUI(),
      // home: MiniCalculator(),
-    home: DoctorInfo(),
+    //home: DoctorInfo(),
     //  home: FindConsultation(),
+     // home: ListViewBuilderView(),
+      home: ModelClasses(),
     );
   }
 }
