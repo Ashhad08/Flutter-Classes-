@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 class Login extends StatelessWidget {
-  TextEditingController _emailcontroller = TextEditingController();
-  TextEditingController _pswdcontroller = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _pswdController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -17,7 +17,7 @@ class Login extends StatelessWidget {
         child: Column(
           children: [
             TextFormField(
-              controller: _emailcontroller,
+              controller: _emailController,
               validator: (val) {
                 if (val!.isEmpty) {
                   return "Kindly Enter Your Email";
@@ -33,7 +33,7 @@ class Login extends StatelessWidget {
               height: 20,
             ),
             TextFormField(
-              controller: _pswdcontroller,
+              controller: _pswdController,
               obscureText: true,
               validator: (val) {
                 if (val!.isEmpty) {
