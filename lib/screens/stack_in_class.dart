@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class StackView extends StatelessWidget {
   const StackView({Key? key}) : super(key: key);
 
@@ -64,7 +65,6 @@ class StackView extends StatelessWidget {
               ],
             ),
           )
-
         ],
       ),
     );

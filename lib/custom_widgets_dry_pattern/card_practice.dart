@@ -31,11 +31,11 @@ class CardWidget extends StatelessWidget {
               width: 100,
               image: AssetImage(imagePath),
             ),
-            if(showButton == true)
-            RaisedButton(
-              onPressed: () => onPressed(),
-              child: Text(buttonText),
-            )
+            if (showButton == true)
+              RaisedButton(
+                onPressed: () => onPressed(),
+                child: Text(buttonText),
+              )
           ],
         ),
       ),

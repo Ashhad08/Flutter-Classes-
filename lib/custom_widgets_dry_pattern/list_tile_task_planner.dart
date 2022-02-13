@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+
 class ListTileWidget extends StatelessWidget {
   final IconData iconData;
   final String title;
   final String subtitle;
   final Color color;
 
-  ListTileWidget({ required this.iconData, required this.title, required this.subtitle, required this.color });
+  ListTileWidget(
+      {required this.iconData,
+      required this.title,
+      required this.subtitle,
+      required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +26,11 @@ class ListTileWidget extends StatelessWidget {
       ),
       title: Text(
         title,
-        style:
-        TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
       subtitle: Text(
         subtitle,
-        style:
-        TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
       ),
     );
   }

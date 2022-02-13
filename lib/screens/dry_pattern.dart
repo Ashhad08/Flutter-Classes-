@@ -10,7 +10,6 @@ class DRYPattern extends StatelessWidget {
       appBar: AppBar(
         title: Text('DRY Pattern'),
       ),
-
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
