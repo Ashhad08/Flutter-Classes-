@@ -1,3 +1,6 @@
+import 'package:first_app/screens/dry_pattern.dart';
+import 'package:first_app/screens/stack_in_class.dart';
+import 'package:first_app/screens/task_planner.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/button_screen.dart';
@@ -45,7 +48,10 @@ class MyApp extends StatelessWidget {
       //home: DoctorInfo(),
       //  home: FindConsultation(),
       //home: ListViewBuilderView(),
-      home: ModelClasses(),
+     // home: ModelClasses(),
+     home: TaskPlanner(),
+     // home: DRYPattern(),
+     // home: StackView(),
     );
   }
 }
