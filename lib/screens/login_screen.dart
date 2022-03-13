@@ -38,7 +38,7 @@ class Login extends StatelessWidget {
               validator: (val) {
                 if (val!.isEmpty) {
                   return "Kindly Enter Your Password";
-                } else if (val!.length < 7) {
+                } else if (val.length < 7) {
                   return "Kindly Enter full passwrod";
                 } else {
                   return null;
